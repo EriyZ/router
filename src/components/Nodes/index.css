@@ -1,0 +1,103 @@
+.dndflow {
+  float: left;
+  width: 100%;
+  height: 100px;
+}
+
+.dndflow aside {
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #9d8759;
+  overflow-x: auto;
+  height: 100px;
+}
+
+.dndflow aside .description {
+  margin-bottom: 10px;
+}
+
+.dndflow .dndnode {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  float: left;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.dndflow .dndnode.input {
+  margin-top: 20px;
+
+}
+
+.dndflow .dndnode.nenor {
+  margin-top: 30px;
+
+}
+
+.dndflow .dndnode.output {
+  margin-top: 30px;
+}
+
+.dndflow .reactflow-wrapper {
+  width: 100%;
+  height: 660px;
+  background-color: #909090;
+}
+
+.dndflow .selectall {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+    flex-direction: row;
+  }
+}
+
+.image {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background-color: #fcfcfc;
+}
+
+.buttonnode {
+  border-radius: 100%;
+}
+
+.login-img {
+  width: 100%;
+  height: 100px;
+}
+
+.updatenode__controls {
+  background-color: #fcfcfc;
+  position: absolute;
+  border: 2px black solid;
+  width: 200px;
+  height: 50px;
+  z-index: 4;
+  font-size: 12px;
+}
+
+.updatenode__controls label {
+  display: block;
+}
+
+.updatenode__bglabel {
+  margin-top: 10px;
+}
+
+.updatenode__checkboxwrapper {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}

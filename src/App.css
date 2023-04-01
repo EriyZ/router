@@ -1,0 +1,221 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+
+}
+
+
+#div1 {
+  width: 810px;
+  height: 120px;
+  background-color: lightskyblue;
+  float: left;
+  overflow-x: auto;
+}
+
+#div2 {
+  width: 100px;
+  height: 80px;
+  float: left;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+#div3 {
+  width: 400px;
+  height: 100px;
+  margin-left: 1220px;
+  margin-top: -96px;
+  float: left;
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+  margin-left: -20px;
+  float: left;
+
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.buttonqianjin {
+  width: 100px;
+  height: 50px;
+  margin-left: 10px;
+
+  display: inline-block;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.buttonqianjin span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonqianjin span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonqianjin:hover span {
+  padding-right: 25px;
+}
+
+
+
+
+.buttonsadd {
+  width: 100px;
+  height: 50px;
+  margin-top: 30px;
+  float: left;
+  margin-left: 50px;
+  background-color: coral;
+  border-radius: 90px;
+
+}
+
+#flowperiphery {
+  width: 800px;
+  height: 100px;
+  float: left;
+  overflow-x: auto;
+}
+
+#overflow {
+  width: 1000px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+nav {
+  height: 2.5rem;
+}
+
+/* 一定要写在class选择器里！等会儿jquery要用到 */
+.sidebarClass {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  /* 先给个定位，侧边栏一般是相对于浏览器定位 */
+  right: -65%;
+  /* 侧边栏有多宽，就-多少，相当于先藏在视窗外边（从左边打开的话就换成left） */
+  width: 65%;
+  height: calc(100vh - 2.5rem);
+  /* 减去底部导航栏的高度 */
+  z-index: 9999;
+  /* 设置一个超大的数字覆盖所有元素，如果层叠不够或者未设置，那么侧边栏可能会被其他元素遮挡 */
+  transition: width 1s;
+  /* 最关键的一步！利用transition实现过渡效果，这里只需要水平过渡，所以width就行了，后面的时间几秒自行设置 */
+}
+
+/* 新建一个class，等会儿jquery要用到，原理也是利用transition：width改变就会启动过渡效果 */
+.addWidth {
+  width: 100%;
+  /* 设置为侧边栏宽度的2倍，才能完全露出 */
+}
+
+.uiclass {
+  display: flex;
+  flex-direction: row;
+}
+
+.deeui {
+  margin-left: 250px;
+  margin-top: 50px;
+  width: 220px;
+  height: 50px;
+  background-color: aquamarine;
+}
+
+aside {
+  font-family: Arial;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: white;
+  padding: 40px;
+  box-shadow:
+    inset #663333 0 0 0 5px,
+    inset #996633 0 0 0 1px,
+    inset #996600 0 0 0 10px;
+
+
+}
